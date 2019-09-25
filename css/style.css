@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/fondo.jpg");
+    background-attachment: fixed;
+    /*hace que la imagen de fonde quede estatica*/
+    font-family: Avenir Next LT Pro, Arial, sans-serif;
+}
+
+.contenedor {
+    width: 95%;
+    height: auto!important;
+    margin: 0 auto;
+    box-shadow: 0px 0px 40px black;
+    background: rgba(247, 247, 247, 1);
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+}
+
+/************HEADER************/
+
+header {
+    width: 30%;
+    display: block;
+    float: left;
+    /*   background: rgb(247, 247, 247);*/
+}
+
+.cabezera header img {
+    width: 60%;
+    height: auto;
+    padding-left: 57px;
+}
+
+/*****************   HEADERFIN     ******/
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/***************MENU*********************/
+
+.menu {
+    display: block;
+    float: left;
+    width: 60%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu li {
+    list-style: none;
+    height: 0px;
+    display: inline-block;
+    line-height: 200px;
+    text-align: center;
+}
+
+.menu a {
+    font-family: Avenir Next LT Pro, Arial, sans-serif;
+    color: rgba(87, 26, 33, 0.9);
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 8px;
+}
+
+.menu a:hover {
+    color: rgb(220, 152, 51);
+    transform: scale(1.1);
+    background: rgba(247, 247, 247, 1);
+    transition: all .3s ease;
+}
+
+/***************************CONTENIDO********************/
+
+.contenido {
+    padding-top: 20px;
+    display: inline-block;
+    width: 100%;
+    border-top: 1.5px solid rgb(234, 234, 234);
+    background: rgba(247, 247, 247, 1);
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+}
+
+.info p {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    height: auto;
+    font-size: 30px;
+    padding: 20px;
+    line-height: 50px;
+}
+
+.info {
+    background: rgb(234, 234, 234);
+    border: 2px solid #b7b7b7;
+}
+
+h1 {
+    color: rgba(87, 26, 33, 0.9);
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+    padding: 20px;
+    font-family: Avenir Next LT Pro, Arial, sans-serif;
+    letter-spacing: 10px;
+    margin: 5px;
+}
+
+/*********************************************************/
+
+/*                        PROYECTOS SECCION               */
+
+.clear {
+    background: url("../img/des.jpg");
+    background-attachment: fixed;
+    /*hace que la imagen de fonde quede estatica*/
+}
+
+/*********************************************************/
+
+/*********************FOOTER*********************/
+
+footer {
+    font-family: Avenir Next LT Pro, Arial, sans-serif;
+    color: black;
+    height: auto;
+    background: rgba(87, 26, 33, 1);
+    font-weight: bold;
+    width: 95%;
+    text-align: center;
+    line-height: 47px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    border-top: 1.5px solid black;
+    margin-left: 2.4%;
+}
+
+.redes-sociales {
+    color: white;
+    font-size: 3em;
+    margin-right: 20px;
+    height: 30%;
+}
+
+.redes-sociales a {
+    margin: 30px;
+    color: black;
+}
+
+.redes-sociales a:hover {
+    margin: 30px;
+    color: rgb(220, 152, 51);
+    transform: scale(3);
+    transition: all .5s ease;
+}
+
+.servicios h1 {
+    letter-spacing: 0px;
+}
+
+/***********************FIN FOOTER*********************/
+
+@media only screen and (max-width: 1014px) {
+    .nosotros {
+        width: 40%!important;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 28px;
+        border: 2px solid #b7b7b7!important;
+    }
+    p {
+        font-size: 25px!important;
+    }
+    .contenedor {
+        height: 100%;
+        width: 100%;
+        border-top: 1.5px solid rgb(234, 234, 234);
+    }
+    .menu {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    .menu li {
+        list-style: none;
+        height: 0px;
+        display: inline-block;
+        line-height: 19px;
+        text-align: center;
+        padding: 10px;
+    }
+    .cabezera header img {
+        width: 100%;
+        height: auto;
+        padding-left: 115%;
+    }
+    .redes-sociales a {
+        font-size: 30px;
+    }
+    .slidebx {
+        float: left;
+        width: 30%;
+        margin: 3% 20%!important;
+    }
+    .bx-wrapper, .bx-viewport {
+        height: auto;
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:735px) {
+    .fotorama__wrap {
+        padding: 10px;
+        margin-left: 19%!important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .fotorama__wrap {
+        padding: 10px;
+        margin-left: 0%!important;
+    }
+    .slidebx {
+        width: 78%!important;
+        margin: 3% 7%!important;
+    }
+    .nosotros:hover {
+        transform: none!important;
+        border: none!important;
+        box-shadow: none!important;
+        transition: nonde!important;
+        background: rgba(247, 247, 247, 1);
+    }
+    .nosotros {
+        width: 99%!important;
+        margin: 0px;
+    }
+    .nosotros p {
+        margin: 0 1px;
+        font-size: 25px;
+    }
+    .nosotros h1 {
+        font-size: 28px;
+    }
+    .contenedor {
+        height: 100%;
+        width: 100%;
+    }
+    .rvs-container {
+        height: 500px!important;
+    }
+}
+
+@media only screen and (max-width: 469px) {
+    .slidebx {
+        margin: 3% 8%!important;
+        width: 70%;
+    }
+    .bx-wrapper, .bx-viewport {
+        height: auto;
+        width: 250px;
+    }
+    .p {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+}
+
+.slidebx {
+    float: left;
+    width: 100%;
+    margin: 3% 36%;
+}
+
+.bx-wrapper, .bx-viewport {
+    height: auto;
+    width: 430px;
+}
+
+/***********NOSOTROS PAGINA ***********************/
+
+p {
+    font-size: 28px;
+    text-align: center;
+}
+
+.nosotros {
+    float: left;
+    width: 45%;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    MARGIN-LEFT: 3%;
+}
+
+.nosotros:hover {
+    transform: scale(1.1);
+    border: 1px solid rgb(220, 152, 51);
+    box-shadow: 0px 0px 50px #666;
+    transition: all .3s ease;
+    background: rgba(247, 247, 247, 1);
+}
+
+.servicios {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: rgba(247, 247, 247, 1);
+}
+
+.servicios p {
+    margin: 15px;
+}
+
+.servicios:hover {
+    transform: scale(1.02);
+    border: 1px solid rgb(220, 152, 51);
+    box-shadow: 0px 0px 50px #666;
+    transition: all .3s ease;
+    background: rgba(247, 247, 247, 1);
+}
+
+/***********NOSOTROS FIN PAGINA ***********************/
+
+/******************GALERIA DE VIDEOS*******************/
+
+.fotosArte {
+    background: url("../img/des.jpg");
+    background-attachment: fixed;
+}
+
+.fotorama__wrap {
+    padding: 10px;
+    margin-left: 35%;
+}
+
+iframe {
+    width: 100%!important;
+    height: 700px!important;
+}
+
+.rvs-container {
+    height: 750px!important;
+}
+#fomrcontac h1{
+    width: 100%;
+    padding-top: 10px;
+display: block;
+}
+
+#fomrcontac input,textarea{
+    width: 100%;
+    padding-bottom: 10px;
+    
+}
+  #fomrcontac{
+      width: 60%;
+      margin-top: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+
+  }
+  #fomrcontac button{
+    width: 60px;
+    height: 50px;
+   
+
+}
+.box{
+    display: block;
+    width: 30%!important;
+    float: left;
+    margin-top: 40px;
+
+}
+.box h1{
+font-size: 20px;
+border: none!important;
+}
+#mensaje textarea{
+    width: 100%;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"] {
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px grey;
+    margin-top: 5px;
+}
+
+.contacto{
+display: block;
+  
+    float: left;
+    width: 40%;
+}
+/*********************************/
